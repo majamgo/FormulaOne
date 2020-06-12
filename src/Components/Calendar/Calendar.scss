@@ -1,0 +1,578 @@
+@import '../../scss/variables';
+
+
+.main-calender {
+    width: 100%;
+    height: auto;
+    //background-color: firebrick;
+}
+
+.calendar-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $col_white;
+    width: 100%;
+    height: 400px;
+    background-image:
+        url('../../img/bannerimgcal.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.thewholecalender {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    //background-color: red;
+}
+
+.calendar-month {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    //background-color: floralwhite;
+
+    h3 {
+        color: $col_white;
+    }
+}
+
+.calender-hr {
+    width: auto;
+    border: 3px solid $col_red;
+    margin: 10px 0 0;
+}
+
+.calendar-allevents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    //background-color: khaki;
+}
+
+.calendar-event {
+    text-decoration: none;
+    height: auto;
+    width: 100%;
+    margin: 20px 0 0;
+    //background-color: indigo;
+
+    h2 {
+        font-size: 48px;
+        color: $col_white;
+    }
+
+    h4 {
+        color: $col_lightwhite;
+    }
+
+    .h4calendarmargin {
+        margin: 10px 0 5px;
+    }
+}
+
+.calendar-racetimes {
+    display: flex;
+    width: auto;
+    height: auto;
+    //background-color: forestgreen;
+}
+
+.racetimes-clock {
+    width: 20%;
+    height: auto;
+    //background-color: fuchsia;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        font-size: 12px;
+        color: grey;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.racetimes-what {
+    width: 80%;
+    height: auto;
+    //background-color: gold;
+
+    div:first-child,
+    div:last-child {
+        width: 100%;
+        height: 57px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 54px;
+        font-size: 14px;
+        color: $col_lightwhite;
+    }
+
+    hr {
+        width: auto;
+        border: 3px solid $col_red;
+    }
+}
+
+.main-race {
+    width: 100%;
+    height: auto;
+    //background-color: firebrick;
+}
+
+.race-banner {
+    position: relative;
+    color: $col_white;
+    width: 100%;
+    height: 400px;
+}
+
+.race-bannerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.race-bannerimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.raceevent-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    color: $col_lightwhite;
+    //background-color: red;
+}
+
+.raceevent-infotext {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    //background-color: khaki;
+}
+
+.raceevent-teext {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    //background-color: lawngreen;
+
+    h2 {
+        font-size: 48px;
+        color: $col_white;
+    }
+
+    h4 {
+        color: $col_lightwhite;
+        margin: 0 0 6px;
+    }
+
+    .teext-end {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        h4 {
+            margin: 0 20px 6px;
+        }
+    }
+}
+
+.raceevent-racetimes {
+    display: flex;
+    width: auto;
+    height: auto;
+    //background-color: forestgreen;
+}
+
+.raceevent-clock {
+    width: 30%;
+    height: auto;
+    //background-color: fuchsia;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        font-size: 14px;
+        color: grey;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.raceevent-what {
+    width: 70%;
+    height: auto;
+    //background-color: gold;
+
+    div:first-child,
+    div:last-child {
+        width: 100%;
+        height: 57px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 54px;
+        font-size: 16px;
+        color: $col_lightwhite;
+    }
+
+    hr {
+        width: auto;
+        border: 3px solid $col_red;
+    }
+}
+
+.raceevent-infoimg {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    //background-color: darkgreen;
+
+    img {
+        width: 280px;
+        height: 393.91px;
+    }
+}
+
+
+.raceevent-facts {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    //background-color: red;
+}
+
+.raceevent-factsimg {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    //background-color: darkgreen;
+
+    img {
+        width: 280px;
+        height: 163.79px;
+    }
+}
+
+.raceevent-factsallinfo {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    //background-color: violet;
+
+    h2 {
+        color: $col_white;
+    }
+}
+
+.raceevent-factsinfo {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px 0;
+    border: 3px solid $col_red;
+    border-radius: 10px;
+    //background-color: lawngreen;
+
+    hr {
+        width: auto;
+        border: 3px solid $col_red;
+        margin: 15px 0;
+    }
+
+    .raceevent-factsinfoinfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        //background-color: darkblue;
+
+        h5 {
+            font-family: 'Impact';
+            color: $col_white;
+        }
+
+        p {
+            color: $col_lightwhite;
+        }
+
+        div {
+            height: auto;
+        }
+
+        div:first-child {
+            width: 38%;
+            //background-color: darkcyan;
+        }
+
+        div:last-child {
+            width: 58%;
+            //background-color: darkgoldenrod;
+        }
+    }
+}
+
+
+.raceevent-bio {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    //background-color: red;
+}
+
+.raceevent-biosection {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    //background-color: lawngreen;
+
+    div {
+        width: auto;
+        height: auto;
+        //background-color: lemonchiffon;
+
+        h2 {
+            color: $col_white;
+        }
+
+        p {
+            color: $col_lightwhite;
+        }
+
+        hr {
+            width: 50px;
+            border: 3px solid $col_red;
+            margin: 10px 0 15px;
+        }
+    }
+}
+
+.raceevent-bioimg {
+    display: none;
+}
+
+
+// Tablet
+@media screen and (min-width: 720px) {
+
+    .thewholecalender {
+        margin: 40px auto;
+    }
+
+    .racetimes-clock {
+        width: 10%;
+    }
+
+    .racetimes-what {
+        width: 100%;
+    }
+
+    .raceevent-info {
+        margin: 40px auto;
+    }
+
+    .raceevent-clock {
+        width: 20%;
+    }
+
+    .raceevent-what {
+        width: 80%;
+    }
+
+    .raceevent-infoimg {
+        img {
+            width: 680px;
+            height: 953.68px;
+        }
+    }
+
+
+    .raceevent-facts {
+        margin: 40px auto;
+    }
+
+    .raceevent-factsimg {
+        img {
+            width: 680px;
+            height: 400px;
+        }
+    }
+
+    .raceevent-biosection {
+        margin: 40px 20px;
+    }
+}
+
+
+// PC
+@media screen and (min-width: 1280px) {
+
+    .thewholecalender {
+        justify-content: space-between;
+        margin: 75px auto;
+    }
+
+    .calendar-month {
+        margin: 0;
+    }
+
+    .calendar-allevents {
+        flex-direction: row;
+    }
+
+    .calendar-event {
+        width: 340px;
+    }
+
+    .calendar-event:nth-child(2) {
+        margin: 20px 60px 0;
+    }
+
+    .racetimes-clock {
+        width: 60px;
+    }
+
+    .racetimes-what {
+        width: 280px;
+    }
+
+    .raceevent-info {
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 75px auto;
+    }
+
+    .raceevent-infotext {
+        width: 903.65px;
+        margin: 0;
+    }
+
+    .raceevent-clock {
+        width: 15%;
+    }
+
+    .raceevent-what {
+        width: 85%;
+    }
+
+    .raceevent-infoimg {
+        width: 256.35px;
+        margin: 0;
+
+        img {
+            width: 256.35px;
+            height: 360px;
+        }
+    }
+
+
+    .raceevent-facts {
+        margin: 75px auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .raceevent-factsimg {
+        width: 580px;
+        margin: 0;
+
+        img {
+            height: 340px;
+            width: 579.46px;
+        }
+    }
+
+    .raceevent-factsallinfo {
+        width: 580px;
+        margin: 0;
+    }
+
+    .raceevent-factsinfo {
+        margin: 20px 0 0;
+    }
+
+    .raceevent-factsinfoinfo {
+        div:first-child {
+            width: 20%;
+        }
+
+        div:last-child {
+            width: 80%;
+        }
+    }
+
+
+    .raceevent-biosection {
+        display: flex;
+        justify-content: space-between;
+        margin: 75px 0;
+
+        div {
+            width: 580px;
+        }
+    }
+
+    .raceevent-bioimg {
+        position: relative;
+        display: flex;
+        height: auto;
+        width: 580px;
+        //background-color: darkblue;
+
+        img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    }
+}

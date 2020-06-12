@@ -1,0 +1,78 @@
+@import '../../scss/variables';
+
+
+.home-bigslider {
+    position: relative;
+    height: 700px;
+}
+
+.home-bigslide {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease;
+
+    h1 {
+        color: $col_white;
+    }
+
+    p {
+        color: $col_lightwhite;
+        font-size: 16px;
+    }
+}
+
+.home-bigslidetext {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    div {
+        width: auto;
+        height: auto;
+        margin: 0 20px;
+    }
+}
+
+.home-bigslide.active {
+    opacity: 1;
+}
+
+.home-bigimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+// Tablet
+@media screen and (min-width: 720px) {
+    .home-bigslidetext {
+
+        div {
+            width: 80%;
+        }
+    }
+}
+
+
+// PC
+@media screen and (min-width: 1280px) {
+    .home-bigslidetext {
+
+        div {
+            width: 580px;
+            margin: 0;
+        }
+    }
+}

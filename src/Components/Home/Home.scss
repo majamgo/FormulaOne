@@ -1,0 +1,116 @@
+@import '../../scss/variables';
+
+
+.home-main {
+    width: 100%;
+    height: auto;
+    //background-color: darkcyan;
+}
+
+.nextrace-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    color: $col_white;
+    //background-color: red;
+}
+
+.nextrace-info {
+    width: auto;
+    height: auto;
+    margin: 0 20px 25px;
+    //background-color: darkgoldenrod;
+
+    h2 {
+        margin: 0 0 10px 0;
+    }
+
+    p {
+        color: $col_lightwhite;
+    }
+}
+
+.h4homemargin {
+    margin: 5px 0;
+}
+
+.nextrace-date {
+    display: flex;
+
+    h4 {
+        margin: 0 10px 0 0;
+        color: $col_red;
+    }
+}
+
+.hrhomemargin {
+    margin: 10px 0 15px 0;
+}
+
+.btnhomemargin {
+    margin: 20px 0 0 0;
+}
+
+.nextrace-track {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    //background-color: darkgreen;
+}
+
+.nextrace-trackimg {
+    width: 280px;
+    height: 141.86px;
+}
+
+
+// Tablet
+@media screen and (min-width: 720px) {
+
+    .nextrace-section {
+        margin: 40px auto;
+    }
+
+    .nextrace-date {
+    
+        h4:first-child {
+            margin: 0 40px 0 0;
+        }
+    }
+
+    .nextrace-trackimg {
+        width: 680px;
+        height: 344.67px;
+    }
+}
+
+
+// PC
+@media screen and (min-width: 1280px) {
+
+    .nextrace-section {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 75px auto;
+    }
+
+    .nextrace-info {
+        width: 580px;
+        margin: 0;
+    }
+
+    .nextrace-track {
+        width: 580px;
+        margin: 0;
+    }
+
+    .nextrace-trackimg {
+        width: 513.26px;
+        height: 260px;
+    }
+}
